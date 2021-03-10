@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Red+Hat+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --main-font-family: 'Pacifico', cursive;
+    --primary-font-family: 'Red Hat Display', sans-serif;
+    --main-color: #37323E;
+    --primary-black: #000000;
+    --primary-white: #FFFFFF;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 900px;
+}
+/*Header*/
+header .menu {
+    list-style-type: none;
+}
+
+header .menu a {
+    text-decoration: none;
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    color: var(--primary-white);
+}
+
+@media (min width: 600px) {
+    
+    header nav {
+        display: flex;
+    }
+    
+    header .menu {
+        display:flex;
+        flex-direction: row;
+        flex: 1;
+        align-items: center;}
+}
+
+carousel-item-active {
+    margin-top: 0;
+    background-size: cover;
+    background-position: 800px;
+}
+h1 {
+    font-family: var(--main-font-family);
+    color: var(--primary-white);
+}
