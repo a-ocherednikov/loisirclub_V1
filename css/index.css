@@ -8,6 +8,7 @@
     --secondary-a: #000000;
     --secondary-b: #FFFFFF;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -20,19 +21,20 @@ body {
 
 /*Header*/
 header {
-    display: block;
+    display: inline-block;
     height: auto;
     width: auto;
     position: fixed;
     background-color: var(--primary-color);
 }
 
-}
 .logo {
-    display: inline-flex;
-    width: auto;
-    height: auto;
-    max-width: 160px;
+    display: block;
+    padding-top: 10px;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
 }
 header .menu {
     list-style-type: none;
@@ -41,14 +43,16 @@ header .menu {
     flex: 1;
     flex-direction: row;
 }
-ul {
-    display:block;
+
+nav ul {
+    display:flex;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
  }
+
 header .menu a {
     text-decoration: none;
     font-family: var(--primary-font);
@@ -58,25 +62,26 @@ header .menu a {
     display: inline-block;
 }
 
-@media (min width: 600px) {
-    
-    header nav {
-        display: flex;
-    }
-   
-    header .menu {
-        display:flex;
-        flex-direction: row;
-        flex: 1;
-        align-items: right;}
+#search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
-carousel-item-active {
-    margin-top: 0;
-    background-size: cover;
-    background-position: 800px;
-}
+/*Main*/
 h1 {
     font-family: var(--primary-font);
     color: var(--secondary-b);
+    font-size: 48px;
+}
+
+h2 {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: 32px;
+}
+p {
+    font-family: var(--secondary-font);
+    color: var(--secondary-a);
+    font-size: 16px;
 }
