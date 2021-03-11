@@ -6,28 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loisir Club</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/search-bar.css">
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <nav>
-            <div class="logo"><img src="img/loisir-club-logo_white.png" alt="loisir club логотип"></div>
             <ul class="menu">
-                <li><a href="#home">Головна</a></li>
-                <li><a href="ivents.html">Івенти</a></li>
-                <li><a href="blog.html">Блог</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
+                <li class="logo"><img src="img/loisir-club-logo_white.png" alt="loisir club логотип"></li>
+                <li class="item"><a href="#home" class="active">Головна</a></li>
+                <li class="item"><a href="ivents.html">Івенти</a></li>
+                <li class="item"><a href="blog.html">Блог</a></li>
+                <li class="item"><a href="contacts.html">Контакти</a></li>
+                <li class="search-bar"><input type="text" placeholder="Search..."><div class="search"></div></li>
             </ul>
         </nav>
-        <h1> Ідея клубу дуже проста, але така важлива для сучасної леді</h1>
+    </header>
+    <main>
+<!-- Carousel Item -->
+    <h1> Ідея клубу дуже проста, але така важлива для сучасної леді</h1>
         <div class="carousel-slider">
             <div class="carousel-item-active">
                 <img src="img/top-slide-girl.jpg" alt="слайдер з дівчиною">
             </div>
         </div>
-    </header>
-    <main>
-
         <h2>Про що цей клуб?</h2>
 
         <div class="top-section">

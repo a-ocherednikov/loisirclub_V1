@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Red+Hat+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-    --main-font-family: 'Pacifico', cursive;
-    --primary-font-family: 'Red Hat Display', sans-serif;
-    --main-color: #37323E;
-    --primary-black: #000000;
-    --primary-white: #FFFFFF;
+    --primary-font: 'Pacifico', cursive;
+    --secondary-font: 'Red Hat Display', sans-serif;
+    --primary-color: #37323E;
+    --secondary-a: #000000;
+    --secondary-b: #FFFFFF;
 }
 * {
     margin: 0;
@@ -14,18 +14,48 @@
 }
 
 body {
-    max-width: 900px;
-}
-/*Header*/
-header .menu {
-    list-style-type: none;
+    max-width: 980px;
+    margin: auto;
 }
 
+/*Header*/
+header {
+    display: block;
+    height: auto;
+    width: auto;
+    position: fixed;
+    background-color: var(--primary-color);
+}
+
+}
+.logo {
+    display: inline-flex;
+    width: auto;
+    height: auto;
+    max-width: 160px;
+}
+header .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    flex-direction: row;
+}
+ul {
+    display:block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+ }
 header .menu a {
     text-decoration: none;
-    font-family: var(--main-font-family);
+    font-family: var(--primary-font);
     font-size: 20px;
-    color: var(--primary-white);
+    color: var(--secondary-b);
+    padding: 20px;
+    display: inline-block;
 }
 
 @media (min width: 600px) {
@@ -33,12 +63,12 @@ header .menu a {
     header nav {
         display: flex;
     }
-    
+   
     header .menu {
         display:flex;
         flex-direction: row;
         flex: 1;
-        align-items: center;}
+        align-items: right;}
 }
 
 carousel-item-active {
@@ -47,6 +77,6 @@ carousel-item-active {
     background-position: 800px;
 }
 h1 {
-    font-family: var(--main-font-family);
-    color: var(--primary-white);
+    font-family: var(--primary-font);
+    color: var(--secondary-b);
 }
