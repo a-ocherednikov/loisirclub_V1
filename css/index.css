@@ -85,3 +85,34 @@ p {
     color: var(--secondary-a);
     font-size: 16px;
 }
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-color);
+}
+
+footer p {
+    color: var(--secondary-b);
+    font-size: 12px;
+}
+footer .company {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .social {
+    display: flex;
+    flex: 1 2 auto;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer a {
+    color: var(--secondary-b);
+}
