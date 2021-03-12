@@ -63,7 +63,8 @@ header .menu a {
 #search-bar {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: right;
+    align-items: center;
 }
 
 /*Main*/
