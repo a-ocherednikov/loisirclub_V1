@@ -1,13 +1,5 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Red+Hat+Display:ital,wght@0,400;0,700;1,400&display=swap');
-
-:root {
-    --primary-font: 'Pacifico', cursive;
-    --secondary-font: 'Red Hat Display', sans-serif;
-    --primary-color: #37323E;
-    --secondary-a: #000000;
-    --secondary-b: #FFFFFF;
-}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Red+Hat+Display:ital,wght@0,400;0,700;1,400&display=swap'); :root {
+    --primary-font: 'Pacifico', cursive; --secondary-font: 'Red Hat Display', sans-serif; --primary-color: #37323E; --secondary-a: #000000; --secondary-b: #FFFFFF; }
 
 * {
     margin: 0;
@@ -34,10 +26,12 @@ header {
     justify-content: start;
     align-items: center;
 }
+
 header nav {
     display: flex;
     flex-direction: row;
 }
+
 header .menu {
     list-style-type: none;
     display: flex;
@@ -47,14 +41,14 @@ header .menu {
 }
 
 nav ul {
-    display:flex;
+    display: flex;
     align-items: right;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
- }
+}
 
 header .menu a {
     text-decoration: none;
@@ -73,8 +67,8 @@ header .menu a {
 
 /*Main*/
 .center-text {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -89,13 +83,14 @@ h2 {
     color: var(--primary-color);
     font-size: 32px;
 }
+
 p {
     font-family: var(--secondary-font);
     color: var(--secondary-a);
     font-size: 16px;
 }
-/* Footer */
 
+/* Footer */
 footer {
     display: flex;
     flex-direction: row;
@@ -107,6 +102,7 @@ footer p {
     color: var(--secondary-b);
     font-size: 12px;
 }
+
 footer .company {
     display: flex;
     flex: 0 0 auto;
