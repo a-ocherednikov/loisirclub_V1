@@ -21,16 +21,18 @@ body {
 
 /*Header*/
 header {
-    display: inline-block;
-    height: auto;
-    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     position: fixed;
     background-color: var(--primary-color);
 }
 
 .logo {
-    display: block;
-    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
 }
 header nav {
     display: flex;
@@ -46,6 +48,7 @@ header .menu {
 
 nav ul {
     display:flex;
+    align-items: right;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -69,6 +72,12 @@ header .menu a {
 }
 
 /*Main*/
+.center-text {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
 h1 {
     font-family: var(--primary-font);
     color: var(--secondary-b);
@@ -90,6 +99,7 @@ p {
 footer {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     background-color: var(--primary-color);
 }
 
@@ -99,20 +109,22 @@ footer p {
 }
 footer .company {
     display: flex;
-    flex: 1 1 auto;
+    flex: 0 0 auto;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: left;
     align-items: center;
 }
 
 footer .social {
     display: flex;
-    flex: 1 2 auto;
+    flex: 0 0 auto;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: right;
     align-items: center;
 }
 
 footer a {
+    font-size: 12px;
     color: var(--secondary-b);
+    margin: 0 0 0 10px;
 }
