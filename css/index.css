@@ -1,124 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Red+Hat+Display:ital,wght@0,400;0,700;1,400&display=swap'); :root {
-    --primary-font: 'Pacifico', cursive; --secondary-font: 'Red Hat Display', sans-serif; --primary-color: #37323E; --secondary-a: #000000; --secondary-b: #FFFFFF; }
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Red+Hat+Display:ital,wght@0,400;0,700;1,400&display=swap'); 
 
-* {
-    margin: 0;
-    padding: 0;
+:root {
+    --primary-font: 'Pacifico', cursive; 
+    --secondary-font: 'Red Hat Display', sans-serif; 
+    --primary-color: #37323E; 
+    --secondary-a: #000000; 
+    --secondary-b: #FFFFFF; }
+
+.bg-dark {
+    background-color: var(--primary-color)!important;
 }
 
 body {
-    max-width: 980px;
-    margin: auto;
-}
-
-/*Header*/
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    position: fixed;
-    background-color: var(--primary-color);
-}
-
-.logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-}
-
-header nav {
-    display: flex;
-    flex-direction: row;
-}
-
-header .menu {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    flex: 1;
-    flex-direction: row;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-header .menu a {
-    text-decoration: none;
     font-family: var(--primary-font);
-    font-size: 20px;
-    color: var(--secondary-b);
-    padding: 20px;
-    display: inline-block;
-}
-
-#search-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
-}
-
-/*Main*/
-.center-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-h1 {
-    font-family: var(--primary-font);
-    color: var(--secondary-b);
-    font-size: 48px;
-}
-
-h2 {
-    font-family: var(--primary-font);
-    color: var(--primary-color);
-    font-size: 32px;
 }
 
 p {
     font-family: var(--secondary-font);
-    color: var(--secondary-a);
     font-size: 16px;
 }
 
-/* Footer */
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--primary-color);
+h3 {
+    font-family: var(--secondary-font);
+    font-size: 24px;
 }
 
-footer p {
+h4 {
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    color: var(--secondary-a);
+}
+
+.middle-section ul {
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 0;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+}
+
+.fas {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.bottom-section {
+    background-image: url(../img/fireworks-in-hand.jpg);
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.bottom-section h3, p {
     color: var(--secondary-b);
-    font-size: 12px;
 }
 
-footer .company {
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
+.blog-post-section p {
+    color: var(--secondary-a);
 }
 
-footer .social {
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
+.top-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
 }
 
-footer a {
-    font-size: 12px;
-    color: var(--secondary-b);
-    margin: 0 0 0 10px;
+.top-section p {
+    color: var(--secondary-a);
 }
