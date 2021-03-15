@@ -31,6 +31,22 @@ h4 {
     color: var(--secondary-a);
 }
 
+.top-title {
+    margin: 50px 0 100px 0;
+}
+
+.bg-white-block {
+    display: block;
+    background-color: var(--secondary-b);
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    padding: 40px;
+}
+
+.top-section-about h2 {
+    margin-bottom: 40px;
+}
+
 .middle-section ul {
     list-style-type: none;
     text-decoration: none;
@@ -39,14 +55,45 @@ h4 {
     font-size: 16px;
 }
 
+.middle-section-about {
+    display: block;
+    padding: 40px;
+}
+
+.img-girls-hands-up {
+    margin-bottom: 50px;
+}
+
+.blog-post-section img {
+    width: 230px;
+}
+
+.blog-post-section {
+    flex-direction: row;
+}
+
+.branch-text {
+    display: block;
+    background-color: var(--secondary-b);
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    width: 230px;
+    height: 200px;
+    padding: 10px;
+    margin-left: 230px;
+}
+
 .fas {
     padding-right: 1rem;
     padding-left: 1rem;
 }
 
+.bottom-section-about {
+    padding: 40px;
+}
+
 .bottom-section {
     background-image: url(../img/fireworks-in-hand.jpg);
-    height: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;    
@@ -68,4 +115,67 @@ h4 {
 
 .top-section p {
     color: var(--secondary-a);
+}
+
+#testimonials .card {
+    position: relative;
+    padding: 40px 50px 25px 60px;
+    margin-top: 50px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: var(--secondary-b);
+}
+
+#testimonials .post-txt {
+    font-size: 20px;
+    margin-bottom: 0
+}
+
+#testimonials .quote-img {
+    position: absolute;
+    top: 32px;
+    left: 25px;
+    width: 30px;
+    height: 30px
+}
+
+#testimonials .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 20px solid var(--primary-color);
+    margin-left: 85px
+}
+
+#testimonials .fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+.bottom-title-ivents {
+    margin-top: 50px;
+}
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    margin-top: 3rem;
+}
+
+.company {
+    display: flex;
+    flex-direction: row;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+}
+
+.fab {
+    padding-left: 1rem;
+    color: var(--secondary-b);
 }
