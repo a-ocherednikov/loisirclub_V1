@@ -16,7 +16,7 @@
 <body>
     <header class="container">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid">
-            <div class="container">
+            <div class="container container-logo">
                 <a class="navbar-brand" href="#">
                     <img src="img/loisir-club-logo_white.png" alt="" width="120" height="auto">
                 </a>
@@ -77,7 +77,8 @@
                 <div class="col bg-white-block">
                     <div class="top-section-about">
                         <h2>Про що цей клуб?</h2>
-                        <h3>Все дуже просто - він про жінку, для жінки, завдяки жінці!</h3>
+                        <h3>Все дуже просто -<br>
+                            він про жінку, для жінки, завдяки жінці!</h3>
                         <p>
                             Не читай, якщо ти не хочеш бути щасливою! Ні, тут не про червону помаду чи смачний рецепт,
                             тут
@@ -167,49 +168,70 @@
             </div>
         </div>
         <div class="text-center bottom-title-ivents">
-            <h2>Наступні Івенти</h2>
+            <h2>Наступний Івент відбудеться через</h2>
+            <p id="countdown"></p>
         </div>
-        <div class="ivent-list">
-            <article>
-                <img src="img/family-with-kid.jpg" alt="family-with-kid">
-                <h4>28.03.21</h4>
-                <h3>Як створити гармонію в собі та сім`ї?</h3>
-                <a class="btn btn-outline-dark btn-sm" href="yak-stvorutu-harmoniu.html">Детальніше</a>
-            </article>
-            <article>
-                <img src="img/sunflower-inbetween-legs.jpg" alt="соняшник між ніг">
-                <h4>25.04.21</h4>
-                <h3>10 незручних питань про секс</h3>
-                <a class="btn btn-outline-dark btn-sm" href="10-nezrychnuh-putan-pro-sex.html">Детальніше</a>
-            </article>
-            <div class="d-grid col-6 mx-auto">
-                <a class="btn btn-outline-dark btn-sm" href="ivents.html">Показати більше<i class="fas fa-plus"></i></a>
+        <div class="ivent-list d-flex justify-content-around">
+            <div class="card mb-3" style="max-width: 400px;">
+                <div class="d-flex flex-row">
+                    <div class="d-flex flex-column">
+                        <img src="img/family-with-kid.jpg" style="max-width: 200px;" alt="family-with-kid">
+                    </div>
+                    <div class="card-body">
+                        <h4>25.04.21</h4>
+                        <h3>Як створити гармонію в собі та сім`ї?</h3>
+                        <div>
+                            <a class="btn btn-outline-dark btn-sm" href="yak-stvorutu-harmoniu.html">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 400px;">
+                <div class="d-flex flex-row">
+                    <div class="d-flex flex-column">
+                        <img src="img/sunflower-inbetween-legs.jpg" style="max-width: 200px;" alt="соняшник між ніг">
+                    </div>
+                    <div class="card-body">
+                        <h4>02.05.21</h4>
+                        <h3>10 незручних питань про секс</h3>
+                        <a class="btn btn-outline-dark btn-sm" href="10-nezrychnuh-putan-pro-sex.html">Детальніше</a>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="d-grid col-6 mx-auto">
+            <a class="btn btn-outline-dark btn-sm" style="margin-top: 2rem; href="ivents.html">Показати більше<i class="fas fa-plus"></i></a>
+        </div>
         <img src="img/girls-party.jpg" alt="вечірка дівчат" class="img-fluid"
-            style="margin-top: 20px; margin-bottom: 20px;">
-        <div class="contact-form">
-            <h2>Напишіть нам листа</h2>
-            <img src="img/cut_envelope.png" alt="cut_envelope">
-            <form method="POST" action="https://formspree.io/f/xbjpvvly">
-                <label>
-                    <input name="user-name" type="text" placeholder="Ім`я">
-                </label>
-                <br>
-                <label>
-                    <input name="email" type="email" placeholder="Email" required>
-                </label>
-                <br>
-                <label>
-                    <input name="phone" type="text" placeholder="Номер телефону" required>
-                </label>
-                <br>
-                <label>
-                    <textarea name="message"></textarea>
-                </label>
-                <br>
-                <input type="submit">
-            </form>
+            style="margin-top: 2rem; margin-bottom: 2rem;">
+        <div class="form-body">
+	        <div class="form-body-item left">
+		        <div class="app-title">
+			        <span>Напишіть</span>
+                    <span>нам листа</span>
+                </div>
+                <div class="app-contact">Контактна Інформація: +38 097 777 77 77</div>
+	        </div>
+            <div class="form-body-item">
+		        <div class="app-form">
+                    <div class="app-form-group">
+				        <input class="app-form-control" placeholder="Ім`я">
+                    </div>
+                    <div class="app-form-group">
+                        <input class="app-form-control" placeholder="Email">
+                    </div>
+                    <div class="app-form-group">
+                        <input class="app-form-control" placeholder="Номер телефону">
+                    </div>
+                    <div class="app-form-group message">
+                        <input class="app-form-control" placeholder="Повідомлення">
+                    </div>
+                    <div class="app-form-group buttons">
+                        <button class="app-form-button">CANCEL</button>
+                        <button class="app-form-button">SEND</button>
+                    </div>
+                </div>
+	        </div>
         </div>
     </main>
     <footer class="container">
@@ -230,5 +252,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
-
+<script src="js/index.js"></script>
 </html>
