@@ -71,8 +71,8 @@
         </div>
         <div class="container top-section">
             <div class="row">
-                <div class=" col d-block w-100 img-girl-with-hands">
-                    <img src="img/girls-with-hands-on-eyes.jpg" alt="дівчата закривають очі один одному руками">
+                <div class=" col img-girl-with-hands">
+                        <img src="img/girls-with-hands-on-eyes.jpg" alt="дівчата закривають очі один одному руками">
                 </div>
                 <div class="col bg-white-block">
                     <div class="top-section-about">
@@ -93,7 +93,8 @@
                 </div>
             </div>
         </div>
-        <div class="row middle-section">
+        <div class="container middle-section">
+            <div class="row">
             <div class="col middle-section-about">
                 <h3>Наші переваги</h3>
                 <ul>
@@ -123,8 +124,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="col d-block w-100 img-girls-hands-up">
+            <div class="col img-girls-hands-up">
                 <img src="img/girls-with-hands-up.jpg" alt="дівчата з руками в горі">
+            </div>
             </div>
         </div>
         <div class="row bottom-section">
@@ -161,7 +163,7 @@
                 <div class=" col-sm-11 col-md-9 col-lg-8 col-xl-7">
                     <div class="card">
                         <p class="post"> <span><i class="fas fa-quote-right"></i></span>
-                            <span class="post-txt">Приємна та дружня атмосфера. Завжди цікаві івенти та спікери, які дають змогу по іншому подивитись на деякі речі. Велике дякую Тетяні та Ані!!! Не зупиняйтесь на досягнутому! </span> <span>
+                            <span class="post-txt">Приємна та дружня атмосфера. Завжди цікаві івенти та спікери, які дають змогу по іншому подивитись на деякі речі. Велике дякую Тетяні та Ані!!! Не зупиняйтесь на досягнутому! </span>
                     </div>
                     <div class="arrow-down"></div>
                 </div>
@@ -204,34 +206,37 @@
         </div>
         <img src="img/girls-party.jpg" alt="вечірка дівчат" class="img-fluid"
             style="margin-top: 2rem; margin-bottom: 2rem;">
+        <div class="bottom-form">
         <div class="form-body">
-	        <div class="form-body-item left">
+            <div class="form-body-item left">
 		        <div class="app-title">
 			        <span>Напишіть</span>
                     <span>нам листа</span>
                 </div>
-                <div class="app-contact">Контактна Інформація: +38 097 777 77 77</div>
-	        </div>
+                <div class="app-contact"><img src="img/cut_envelope.png" style="max-width: 150px;" alt="лист"></div>
+            </div>
             <div class="form-body-item">
 		        <div class="app-form">
+                    <form method="POST" action="https://formspree.io/f/xbjpvvly">
+                    <label class="app-form-group">
+				        <input class="app-form-control" type="text" name="Ім`я" placeholder="Ім`я">
+                    </label>
+                    <label class="app-form-group">
+                        <input class="app-form-control" type="email" name="email" placeholder="Email">
+                    </label>
+                    <label class="app-form-group">
+                        <input class="app-form-control" type="number" name="Номер телефону" placeholder="Номер телефону">
+                    </label>
+                    <label class="app-form-group message">
+                        <input class="app-form-control" type="text" name="Повідомлення" placeholder="Повідомлення">
+                    </label>
                     <div class="app-form-group">
-				        <input class="app-form-control" placeholder="Ім`я">
+                        <button class="btn btn-outline-light btn-sm">Надіслати</button>
                     </div>
-                    <div class="app-form-group">
-                        <input class="app-form-control" placeholder="Email">
-                    </div>
-                    <div class="app-form-group">
-                        <input class="app-form-control" placeholder="Номер телефону">
-                    </div>
-                    <div class="app-form-group message">
-                        <input class="app-form-control" placeholder="Повідомлення">
-                    </div>
-                    <div class="app-form-group buttons">
-                        <button class="app-form-button">CANCEL</button>
-                        <button class="app-form-button">SEND</button>
-                    </div>
+                    </form>
                 </div>
-	        </div>
+            </div>
+        </div>
         </div>
     </main>
     <footer class="container">
