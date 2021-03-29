@@ -1,6 +1,6 @@
 const countDownDate = new Date("Apr 25, 2021 18:00:00").getTime();
 
-const x = setInterval(function() {
+const num = setInterval(function() {
   const now = new Date().getTime();
   let distance = countDownDate - now;
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -12,7 +12,7 @@ const x = setInterval(function() {
   + minutes + " хв " + seconds + " сек ";
 
   if (distance < 0) {
-    clearInterval(x);
+    clearInterval(num);
     document.getElementById("countdown").innerHTML = "Івент нажаль пройшов";
   }
 }, 1000);
