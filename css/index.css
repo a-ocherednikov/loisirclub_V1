@@ -47,6 +47,11 @@ h4 {
         align-items: center;
         width: 50%;
     }
+    
+    .bg-white-block {
+        margin-top: 0;
+        margin-right: 0;
+    }
 }
 
 #carousel-top h1 {
@@ -63,6 +68,7 @@ h4 {
     border: none;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     padding: 40px;
+    margin-top: 4rem;
 }
 
 .bg-white-block {
@@ -71,10 +77,28 @@ h4 {
     border: none;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     padding: 40px;
+    margin-top: 4rem;
+    margin-right: 3rem;
 }
 
+@media (max-width: 992px) {
+    .bg-white-block {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+}
 .top-section-about h2 {
     margin-bottom: 40px;
+}
+
+.top-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.top-section p {
+    color: var(--secondary-a);
 }
 
 .middle-section {
@@ -148,15 +172,6 @@ h4 {
     color: var(--secondary-a);
 }
 
-.top-section {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.top-section p {
-    color: var(--secondary-a);
-}
-
 #testimonials .card {
     position: relative;
     padding: 40px 50px 25px 60px;
@@ -208,7 +223,16 @@ h4 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 300px;
+    text-align: center;
+    padding-top: 120px;
+    margin-top: 3rem;
     z-index: -1;
+} 
+
+.img-girls-party h2 {
+    font-size: 48px;
+    color: var(--secondary-b);
 }
 
 /* Form */
@@ -222,6 +246,8 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: -4rem;
+    z-index: 2;
 }
 
 .form-body {
