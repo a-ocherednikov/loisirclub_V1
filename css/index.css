@@ -203,6 +203,14 @@ h4 {
     margin-top: 50px;
 }
 
+.img-girls-party {
+    background-image: url(../img/girls-party.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
 /* Form */
 form {
     display: flex;
