@@ -222,8 +222,8 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 50%;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .img-girls-party {
