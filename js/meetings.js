@@ -13,6 +13,20 @@ const meetingsJSON = `
         "date": "02.05.21",
         "title": "10 незручних питань про секс",
         "link": "10-nezrychnuh-putan-pro-sex.html"
+    },
+    {
+        "id": "3",
+        "image": "girl-in-car.jpg",
+        "date": "14.05.21",
+        "title": "Дівчата за кермом!",
+        "link": "divchata-za-kermom.html"
+    },
+    {
+        "id": "4",
+        "image": "suntan.jpg",
+        "date": "18.06.21",
+        "title": "Правильно засмагати легко",
+        "link": "pravulno-zasmagatu-legko.html"
     }
 ]
 `;
