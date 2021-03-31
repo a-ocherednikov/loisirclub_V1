@@ -34,8 +34,8 @@ const meetingsJSON = `
 function renderMeetings(meetings) {
     const meetingsContainer = document.querySelector('.meetings-list');
     meetingsContainer.innerHTML = '';
-                for (const meeting of meetings){
-                 meetingsContainer.innerHTML += `
+    for (const meeting of meetings) {
+        meetingsContainer.innerHTML += `
                 <div class="card mx-4 mb-3" style="max-width: 400px;">
                     <div class="d-flex flex-row">
                         <div class="d-flex flex-column">
