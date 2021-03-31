@@ -221,9 +221,7 @@ h4 {
 .meetings-list {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 50%;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    flex-basis: 33%;
 }
 
 .img-girls-party {

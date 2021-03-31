@@ -36,7 +36,7 @@ function renderMeetings(meetings) {
     meetingsContainer.innerHTML = '';
                 for (const meeting of meetings){
                  meetingsContainer.innerHTML += `
-                <div class="card mb-3" style="max-width: 400px;">
+                <div class="card mx-4 mb-3" style="max-width: 400px;">
                     <div class="d-flex flex-row">
                         <div class="d-flex flex-column">
                             <img src="img/${meeting.image}" style="max-width: 200px;" alt="${meeting.title}" />
