@@ -218,6 +218,12 @@ h4 {
     margin-top: 50px;
 }
 
+.meetings-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33,33%;
+}
+
 .img-girls-party {
     background-image: url(../img/girls-party.jpg);
     background-position: center;
